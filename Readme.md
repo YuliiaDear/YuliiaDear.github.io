@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yuliia Druzenko](https://up.htmlacademy.ru/htmlcss/19/user/381901).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://up.htmlacademy.ru/htmlcss/19/user/18034).
 
 ---
 
