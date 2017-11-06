@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Hotel Sedona</title>
+    <title>Sedona city</title>
   </head>
   <body>
     <div class="container">  
@@ -32,7 +32,7 @@
             <span>- №1 -</span>
             <p>Седона - не атракцион для туристов. там течет своя жизнь</p>
           </div>
-          <img src="picture.jpg">
+          <img width="200" height="100" src="picture.jpg">
       </section>
       <section class="features-info">
         <ul>
@@ -51,7 +51,7 @@
         </ul>
       </section>
       <section class="features-2">
-          <img src="picture2.jpg">
+          <img width="200" height="100" src="picture2.jpg">
           <div class="sub-features">
               <h3>ТАМ ЕСТЬ  Мост дьявола</h3>
               <span>— №2 —</span>
@@ -80,7 +80,7 @@
       <section>  
         <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>  
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button value="Поиск гостиницы в Седоне">Кнопка поиска гостиницы</button>
+        <button>Поиск гостиницы в Седоне</button>
       </section>
         
       <div>map</div>
@@ -100,13 +100,12 @@
       </p>
     </footer>
   </div>
-    <form class="search-form">
-      <h2>Форма поиска</h2>
-      <p>Дата заезда</p> 
-      <p>Дата выезда</p>
-      <p>Взрослые</p>
-      <p>Дети</p>
-      <!-- Здесь будет форма -->
+    <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+        <label>Дата заезда<input type="text" name="arrival-date" id="arrival-date"></label> 
+        <label>Дата выезда<input type="text" name="departure-date" id="departure-date"></label>
+        <label>Взрослые<input type="text" name="adults-amt" id="adults-amt" value="2"></label>
+        <label>Дети<input type="text" name="children-amt" id="children-amt" value="0"></label>
+      <input type="submit" value="Найти">    
     </form>
   </body>
 </html>
