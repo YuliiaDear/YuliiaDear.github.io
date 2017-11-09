@@ -26,15 +26,15 @@
             <h2 class="description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2> 
             <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
-      <section class="features-1">
-          <div class="sub-features">
+      <section>
+          <div class="features-block">
             <h3>Настоящий городок</h3> 
             <span>- №1 -</span>
             <p>Седона - не атракцион для туристов. там течет своя жизнь</p>
           </div>
           <img width="800" height="256" src="img/main-photo-1.jpg"  alt="sedona city">
       </section>
-      <section class="features-info">
+      <section class="sub-features">
         <ul>
           <li>
             <h4>Жилье</h4>
@@ -50,40 +50,40 @@
           </li>
         </ul>
       </section>
-      <section class="features-2">
+      <section>
           <img width="800" height="256" src="img/main-photo-2.jpg" alt="devil's Bridge">
-          <div class="sub-features">
+          <div class="features-block">
               <h3>ТАМ ЕСТЬ  Мост дьявола</h3>
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
       </section>
-      <section class="features-3">
+      <section class="features-block">
         <ul>
-          <li class="sub-features">
+          <li>
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <span>— №3 —</span>
             <p>ВСЕ достопримечательности находятся очень близко</p>
           </li>
-          <li class="sub-features">
+          <li>
             <h3>КРАСИВАЯ ДОРОГА</h3>
             <span>— №4 —</span>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
-          <li class="sub-features">
+          <li>
             <h3>МАЛО ТУРИСТОВ</h3>
             <span>— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
            </li>
         </ul>
       </section>
-      <section>  
+      <section class="order">  
         <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>  
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>Поиск гостиницы в Седоне</button>
       </section>
         
-      <div>map</div>
+      <div class="map">Карта Седоны</div>
         
     </main>
     <footer class="main-footer">
@@ -113,10 +113,24 @@
     </footer>
   </div>
     <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
-        <label>Дата заезда<input type="text" name="arrival-date" id="arrival-date"></label> 
-        <label>Дата выезда<input type="text" name="departure-date" id="departure-date"></label>
-        <label>Взрослые<input type="text" name="adults-amt" id="adults-amt" value="2"></label>
-        <label>Дети<input type="text" name="children-amt" id="children-amt" value="0"></label>
+        <label>Дата заезда
+            <input type="text" name="arrival-date" id="arrival-date">
+        </label>
+        <button class="calendar"></button>
+        <label>Дата выезда
+            <input type="text" name="departure-date" id="departure-date">
+        </label>
+        <button class="calendar"></button>
+        <label>Взрослые
+            <input type="text" name="adults-amt" id="adults-amt" value="2">
+        </label>
+        <button class="minus"></button>
+        <button class="plus"></button>
+        <label>Дети
+            <input type="text" name="children-amt" id="children-amt" value="0">
+        </label>
+        <button class="minus"></button>
+        <button class="plus"></button>
       <input type="submit" value="Найти">    
     </form>
   </body>

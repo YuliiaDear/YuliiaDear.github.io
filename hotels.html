@@ -19,10 +19,9 @@
       </nav>
     </header>
     <main>
-        <div class="top-background">
-        </div>
+        <section class="search">
         <form action="https://echo.htmlacademy.ru" method="get">
-          <section  class:="infrastructure">
+          <div  class:="infrastructure">
             <h3>Инфраструктура:</h3>
             <ul>
                 <li>
@@ -30,78 +29,97 @@
                 <label for="pool-field">Бассейн</label>
                 </li>
                 <li>
-                <input type="checkbox" name="Parking" id="Parking-field">
-                <label for="Parking-field">Парковка</label>
+                <input type="checkbox" name="Parking" id="parking-field">
+                <label for="parking-field">Парковка</label>
                 </li>
                 <li>
-                <input type="checkbox" name="Wi-Fi" id="Wi-Fi-field">
-                <label for="Wi-Fi-field">Wi-Fi</label>
+                <input type="checkbox" name="wi-fi" id="wi-fi-field">
+                <label for="wi-fi-field">Wi-Fi</label>
                 </li>
             </ul>
-          </section>
-          <section class="type-housing">
+          </div>
+          <div class="type-housing">
             <h3>Тип жилья:</h3>
             <ul>
                 <li>
-                <input type="checkbox" name="Hotel" id="Hotel-field" checked>
-                <label for="Hotel-field">Гостиница</label>
+                <input type="checkbox" name="Hotel" id="hotel-field" checked>
+                <label for="hotel-field">Гостиница</label>
                 </li>
                 <li>
-                <input type="checkbox" name="Motel" id="Motel-field" checked>
-                <label for="Motel-field">Мотель</label>
+                <input type="checkbox" name="Motel" id="motel-field" checked>
+                <label for="motel-field">Мотель</label>
                 </li>
                 <li>
-                <input type="checkbox" name="Apartments" id="Apartments-field" checked>
-                <label for="Apartments-field">Апартаменты</label>
+                <input type="checkbox" name="apartments" id="apartments-field" checked>
+                <label for="apartments-field">Апартаменты</label>
                 </li>
             </ul>
-          </section> 
-          <section class="prise">
+          </div> 
+          <div class="price">
             <h3>Стоимость в сутки:</h3>
             <input id="price-min" type="text" value="от 0" name="price-min"> 
             <input id="price-max" type="text" value="до 3000" name="price-max">
             <div class="slider-1"> </div>
             <div class="slider-2"> </div>
             <input type="submit" value="Показать">    
-        </section>
+          </div>
         </form>
-        <b>Найдено:</b>
-        <span>3</span>
-        <p>Сортировка:</p>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По рейтингу</a>
-        <a href="#">min-max</a>
-        <a href="#">max-min</a>
-        <ul class="hotels-list">
-          <li>  
-            <img width="135" height="90" src="img/hotel-amara.jpg" alt="Amara Resort & Spa">
-            <h3>Amara Resort & Spa</h3>
-            <p>Гостиница</p>
-            <span>От 4000 р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 8,5</p>  
-          </li>
-          <li>  
-            <img width="135" height="90" src="img/hotel-desert.jpg" alt="Desert Quail Inn">
-            <h3>Desert Quail Inn</h3>
-            <p>Мотель</p>
-            <span>От 3000 р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 8,9</p>  
-          </li>  
-          <li>  
-            <img width="135" height="90" src="img/hotel-villas.jpg" alt="Villas at Poco Diablo">
-            <h3>Villas at Poco Diablo</h3>
-            <p>Апартаменты</p>
-            <span>От 2000 р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 9,2</p>  
-          </li>  
-        </ul>
+        </section>
+        <section class="results">
+          <div class="sort">
+            <b>Найдено:</b>
+            <span>3</span>
+            <p>Сортировка:</p>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+            <a href="#">min-max</a>
+            <a href="#">max-min</a>
+          </div>
+          <section class="hotel-list">   
+            <ul>
+              <li>
+                <div>
+                  <img width="135" height="90" src="img/hotel-amara.jpg" alt="Amara Resort & Spa">
+                  <h3>Amara Resort & Spa</h3>
+                  <p>Гостиница</p>
+                  <span>От 4000 р.</span>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                  <div class="rating">
+                    <p>Рейтинг: 8,5</p> 
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img width="135" height="90" src="img/hotel-desert.jpg" alt="Desert Quail Inn">
+                  <h3>Desert Quail Inn</h3>
+                  <p>Мотель</p>
+                  <span>От 3000 р.</span>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                  <div class="rating">
+                    <p>Рейтинг: 8,9</p>
+                  </div>
+                </div>
+              </li>  
+              <li> 
+                <div>
+                  <img width="135" height="90" src="img/hotel-villas.jpg" alt="Villas at Poco Diablo">
+                  <h3>Villas at Poco Diablo</h3>
+                  <p>Апартаменты</p>
+                  <span>От 2000 р.</span>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                  <div class="rating">
+                    <p>Рейтинг: 9,2</p>
+                  </div>
+                </div>
+              </li>  
+            </ul>
+          </section>
+        </section>
     </main>
     <footer class="main-footer">
       <a href="#">#VISITSEDONA</a>
