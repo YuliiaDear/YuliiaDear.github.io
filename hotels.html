@@ -20,10 +20,10 @@
     </header>
     <main>
         <section class="search">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <div  class:="infrastructure">
-            <h3>Инфраструктура:</h3>
-            <ul>
+        <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+          <fieldset>
+             <legend>Инфраструктура:</legend>            
+               <ul>
                 <li>
                 <input type="checkbox" name="pool" id="pool-field" checked>
                 <label for="pool-field">Бассейн</label>
@@ -36,11 +36,11 @@
                 <input type="checkbox" name="wi-fi" id="wi-fi-field">
                 <label for="wi-fi-field">Wi-Fi</label>
                 </li>
-            </ul>
-          </div>
-          <div class="type-housing">
-            <h3>Тип жилья:</h3>
-            <ul>
+               </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>            
+               <ul>
                 <li>
                 <input type="checkbox" name="Hotel" id="hotel-field" checked>
                 <label for="hotel-field">Гостиница</label>
@@ -54,15 +54,19 @@
                 <label for="apartments-field">Апартаменты</label>
                 </li>
             </ul>
-          </div> 
-          <div class="price">
-            <h3>Стоимость в сутки:</h3>
-            <input id="price-min" type="text" value="от 0" name="price-min"> 
-            <input id="price-max" type="text" value="до 3000" name="price-max">
-            <div class="slider-1"> </div>
-            <div class="slider-2"> </div>
+          </fieldset> 
+          <fieldset>
+            <legend><label for="pricecount">Стоимость в сутки(P):</label></legend>     <div> 
+			     <input type="text" name="price-min">
+			  </div>
+			  <div> 
+			     <input type="text" name="price-max">
+			  </div>
+			  <div> 
+               0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
+			  </div>
             <input type="submit" value="Показать">    
-          </div>
+          </fieldset>      
         </form>
         </section>
         <section class="results">
