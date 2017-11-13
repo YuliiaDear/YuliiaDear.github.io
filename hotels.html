@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+      <nav class="main-navigation" aria-label="навигация по сайту"> 
+        <a class="main-header-logo" aria-label="логотип Sedona" href="index.html">
           <img src="img/logo.png" width="137" height="70" href="index.html" alt="Логотип «Sedona»">
         </a>
         <ul class="site-navigation">
@@ -20,67 +20,71 @@
     </header>
     <main>
         <section class="search">
-        <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+        <form class="filter"  method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
              <legend>Инфраструктура:</legend>            
                <ul>
-                <li>
-                <input type="checkbox" name="pool" id="pool-field" checked>
-                <label for="pool-field">Бассейн</label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
                 </li>
-                <li>
-                <input type="checkbox" name="Parking" id="parking-field">
-                <label for="parking-field">Парковка</label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
                 </li>
-                <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi-field">
-                <label for="wi-fi-field">Wi-Fi</label>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-Fi</label>
                 </li>
                </ul>
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>            
                <ul>
-                <li>
-                <input type="checkbox" name="Hotel" id="hotel-field" checked>
-                <label for="hotel-field">Гостиница</label>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
                 </li>
-                <li>
-                <input type="checkbox" name="Motel" id="motel-field" checked>
-                <label for="motel-field">Мотель</label>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
                 </li>
-                <li>
-                <input type="checkbox" name="apartments" id="apartments-field" checked>
-                <label for="apartments-field">Апартаменты</label>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
                 </li>
             </ul>
           </fieldset> 
           <fieldset>
-            <legend><label for="pricecount">Стоимость в сутки(P):</label></legend>     <div> 
-			     <input type="text" name="price-min">
+            <legend><label for="price-min">Стоимость в сутки(P):</label></legend>     
+			  <div> 
+			     <input type="text" id="price-min" name="price-min" value="от 0">
 			  </div>
 			  <div> 
-			     <input type="text" name="price-max">
+			     <input type="text" id="price-max" name="price-max" value="до 3000">
 			  </div>
 			  <div> 
                0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
 			  </div>
-            <input type="submit" value="Показать">    
-          </fieldset>      
+          </fieldset>  
+			<button type="submit" class="filter-button button">Показать</button> 
         </form>
         </section>
-        <section class="results">
-          <div class="sort">
+        <section class="results-sort">
+          <div class="results">
             <b>Найдено:</b>
             <span>3</span>
+		  </div>
+		  <div class="sort">
             <p>Сортировка:</p>
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
             <a href="#">min-max</a>
             <a href="#">max-min</a>
-          </div>
-          <section class="hotel-list">   
+		  </div>
+		</section>	
+        <section class="hotel-item">   
             <ul>
               <li>
                 <div>
@@ -123,22 +127,21 @@
               </li>  
             </ul>
           </section>
-        </section>
     </main>
     <footer class="main-footer">
       <a href="#">#VISITSEDONA</a>
       <div class="footer-social">
         <ul>
           <li><a class="social-button twitter-icon" href="#">
-                <img src="img/twitter-icon.svg" alt="Twitter">
+                <img src="img/twitter-icon.svg" alt="Sedona in Twitter">
               </a>
           </li>
           <li><a class="social-button facebook-icon" href="#">
-                <img src="img/fb-icon.svg" alt="Facebook">
+                <img src="img/fb-icon.svg" alt="Sedona in Facebook">
               </a>
           </li>
           <li><a class="social-button youtube-icon" href="#">
-                <img src="img/youtube-icon.svg" alt="Youtube">
+                <img src="img/youtube-icon.svg" alt="Sedona in youtube">
               </a>
           </li>
         </ul>

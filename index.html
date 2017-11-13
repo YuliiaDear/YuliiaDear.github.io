@@ -7,8 +7,8 @@
   <body>
     <div class="container">  
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
+      <nav class="main-navigation" aria-label="навигация по сайту">
+        <a class="main-header-logo" aria-label="логотип Sedona" href="#">
           <img src="img/logo.png" width="137" height="70" alt="Логотип «Sedona»">
         </a>
         <ul class="site-navigation">
@@ -32,7 +32,7 @@
             <span>- №1 -</span>
             <p>Седона - не атракцион для туристов. там течет своя жизнь</p>
           </div>
-          <img width="800" height="256" src="img/main-photo-1.jpg"  alt="sedona city">
+          <img width="800" height="256" src="img/main-photo-1.jpg"  alt="город sedona">
       </section>
       <section class="sub-features">
         <ul>
@@ -51,7 +51,7 @@
         </ul>
       </section>
       <section>
-          <img width="800" height="256" src="img/main-photo-2.jpg" alt="devil's Bridge">
+          <img width="800" height="256" src="img/main-photo-2.jpg" alt="мост дьявола">
           <div class="features-block">
               <h3>ТАМ ЕСТЬ  Мост дьявола</h3>
               <span>— №2 —</span>
@@ -83,7 +83,8 @@
         <button>Поиск гостиницы в Седоне</button>
       </section>
         
-      <div class="map">Карта Седоны</div>
+		<img src="img/map.jpg" width="1200" alt="Карта города Седона">
+		<div class="map">Карта Седоны</div>
         
     </main>
     <footer class="main-footer">
@@ -91,15 +92,15 @@
       <div class="footer-social">
         <ul>
           <li><a class="social-button twitter-icon" href="#">
-                <img src="img/twitter-icon.svg" alt="Twitter">
+                <img src="img/twitter-icon.svg" alt="Sedona in Twitter">
               </a>
           </li>
           <li><a class="social-button facebook-icon" href="#">
-                <img src="img/fb-icon.svg" alt="Facebook">
+                <img src="img/fb-icon.svg" alt="Sedona in Facebook">
               </a>
           </li>
           <li><a class="social-button youtube-icon" href="#">
-                <img src="img/youtube-icon.svg" alt="Youtube">
+                <img src="img/youtube-icon.svg" alt="Sedona in youtube">
               </a>
           </li>
         </ul>
@@ -114,24 +115,24 @@
   </div>
     <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
         <label>Дата заезда
-            <input type="text" name="arrival-date" id="arrival-date">
+            <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
         </label>
         <button class="calendar"></button>
         <label>Дата выезда
-            <input type="text" name="departure-date" id="departure-date">
+            <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
         </label>
         <button class="calendar"></button>
-        <label>Взрослые
+		<label for="adults-amt">Взрослые</label>
+			<button class="button">-</button>
             <input type="text" name="adults-amt" id="adults-amt" value="2">
-        </label>
-        <button class="minus"></button>
-        <button class="plus"></button>
-        <label>Дети
+        <button class="button">+</button>
+		
+		<label for="children-amt">Дети</label>
+		    <button class="button">-</button>
             <input type="text" name="children-amt" id="children-amt" value="0">
-        </label>
-        <button class="minus"></button>
-        <button class="plus"></button>
-      <input type="submit" value="Найти">    
+        
+        <button class="button">+</button>
+      <button class="button" type="submit" value="Найти">Найти</button>   
     </form>
   </body>
 </html>
