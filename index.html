@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona city</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">  
@@ -27,7 +30,7 @@
             <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
       <section>
-          <div class="features-block">
+          <div class="feature-item-block">
             <h3>Настоящий городок</h3> 
             <span>- №1 -</span>
             <p>Седона - не атракцион для туристов. там течет своя жизнь</p>
@@ -35,16 +38,16 @@
           <img width="800" height="256" src="img/main-photo-1.jpg"  alt="город sedona">
       </section>
       <section class="sub-features">
-        <ul>
-          <li>
+        <ul class="sub-features-list">
+          <li class="feature-item">
             <h4>Жилье</h4>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h4>Еда</h4>
             <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h4>Сувениры</h4>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -52,32 +55,32 @@
       </section>
       <section>
           <img width="800" height="256" src="img/main-photo-2.jpg" alt="мост дьявола">
-          <div class="features-block">
+          <div class="feature-item-block">
               <h3>ТАМ ЕСТЬ  Мост дьявола</h3>
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
       </section>
       <section class="features-block">
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <span>— №3 —</span>
             <p>ВСЕ достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>КРАСИВАЯ ДОРОГА</h3>
             <span>— №4 —</span>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>МАЛО ТУРИСТОВ</h3>
             <span>— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
            </li>
         </ul>
       </section>
-      <section class="order">  
+      <section class="search-hotel">  
         <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>  
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>Поиск гостиницы в Седоне</button>
@@ -88,9 +91,9 @@
         
     </main>
     <footer class="main-footer">
-      <a href="#">#VISITSEDONA</a>
+		<p><a href="#">#VISITSEDONA</a></p>
       <div class="footer-social">
-        <ul>
+        <ul class="footer-social-networks">
           <li><a class="social-button twitter-icon" href="#">
                 <img src="img/twitter-icon.svg" alt="Sedona in Twitter">
               </a>
@@ -114,20 +117,20 @@
     </footer>
   </div>
     <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
-        <label>Дата заезда
+        <label>Дата заезда:
             <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
         </label>
         <button class="calendar"></button>
-        <label>Дата выезда
+        <label>Дата выезда:
             <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
         </label>
         <button class="calendar"></button>
-		<label for="adults-amt">Взрослые</label>
+		<label for="adults-amt">Взрослые:</label>
 			<button class="button">-</button>
             <input type="text" name="adults-amt" id="adults-amt" value="2">
         <button class="button">+</button>
 		
-		<label for="children-amt">Дети</label>
+		<label for="children-amt">Дети:</label>
 		    <button class="button">-</button>
             <input type="text" name="children-amt" id="children-amt" value="0">
         
