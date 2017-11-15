@@ -45,6 +45,14 @@ a {
 	color: #766357;
 }
 
+.filter fieldset {
+	border: none;
+}
+
+.filter ul {
+	list-style: none;
+}
+
 .sub-features-list,
 .features-list {
   list-style: none;
@@ -132,3 +140,8 @@ h2{
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.visually-hidden {
+	display: none;
+}
+  
