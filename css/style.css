@@ -50,6 +50,11 @@ a {
 	color: #766357;
 }
 
+main,
+footer {
+  background-color: #ffffff;	
+}
+
 .sub-features-list,
 .features-list {
   list-style: none;
@@ -147,9 +152,11 @@ h2{
 /* hotels.html */
 
 
-
+.filter-hotel {
+  background-color: #81b3d2;
+}
 .filter-hotel fieldset {
-	border: none;
+  border: none;
 }
 
 .filter-hotel ul {
@@ -254,12 +261,6 @@ h2{
   margin-right: 5px;
 }
 
-.results-list-hotels h3 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;	
-  color: #000000;
-}
 
 .results-list-hotels {
 list-style: none;
@@ -272,20 +273,65 @@ list-style: none;
   color: #333333;
 }
 
-a.more-information {
+.results-list-hotels .hotel-name{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;	
+  color: #000000;
+}
+
+.results-list-hotels .hotel-name:hover,
+.results-list-hotels .hotel-name:focus {
+  color: #81b3d2;
+}
+
+.results-list-hotels .hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.results-list-hotels .more-info {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;	
   color: #ffffff;
-	
   background-color: #81b3d2;
 }
 
-a.reservation {
+.results-list-hotels .more-info:hover,
+.results-list-hotels .more-info:focus {
+  background-color: #669ec0;
+}
+
+.results-list-hotels .more-info:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.results-list-hotels .reserve {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;	
   color: #ffffff;
-	
   background-color: #766357;
 }
+
+.results-list-hotels .reserve:hover,
+.results-list-hotels .reserve:focus {
+  background-color: #604e43;
+}
+
+.results-list-hotels .reserve:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rating p {
+  text-align: center;
+  color: #666666;
+  vertical-align: middle;
+  	
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+}
+
