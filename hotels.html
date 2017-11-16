@@ -22,9 +22,9 @@
       </nav>
     </header>
     <main>
-      <section class="search"> 
-		<h3 class="visually-hidden">Форма поиска гостинцы в Седоне</h3>
-        <form class="filter"  method="get" action="https://echo.htmlacademy.ru">
+      <section class="filter-hotel"> 
+		<h3 class="visually-hidden">Форма подбора гостинцы в Седоне</h3>
+        <form class="filter-form"  method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -59,8 +59,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend><label for="price-min">Стоимость в сутки(P):</label></legend>
+          <fieldset class="costs-filter">
+            <legend>Стоимость в сутки(P):</legend>
             <div> 
               <input type="text" id="price-min" name="price-min" value="от 0">
             </div>
@@ -71,12 +71,12 @@
               0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> 3000
             </div>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button> 
+          <button type="submit" class="filter-button">Показать</button> 
         </form>
       </section>
       <section class="sort-panel">
 	    <h3 class="visually-hidden">Результаты поиска гостинцы в Седоне</h3>  
-        <div class="results">
+        <div class="found">
           <b>Найдено:</b>
           <span>3</span>
         </div>
@@ -89,7 +89,7 @@
           <a href="#">max-min</a>
         </div>
       </section>
-      <section class="hotel-search-results">
+      <section class="hotel-filter-results">
         <ul>
           <li>
               <img width="135" height="90" src="img/hotel-amara.jpg" alt="Amara Resort & Spa">
