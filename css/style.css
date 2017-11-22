@@ -16,6 +16,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.main-header {
+   min-height: 56px;
+}
+
 .main-navigation {
   font-size: 14px;
   font-weight: 700;
@@ -23,6 +33,14 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+	
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-header-logo {
+
 }
 
 .site-navigation {
@@ -34,7 +52,6 @@ a {
 }
 
 .site-navigation li {
-  display: inline;
   margin-right: 20px;
 }
 
@@ -55,6 +72,25 @@ footer {
   background-color: #ffffff;	
 }
 
+.welcome-block {
+  background-color: #e2f0f9;
+  height: auto;
+  width: 1200px;
+  min-height: auto;
+}
+
+.background-image {
+  background-image: url("img/top-background.jpg");
+  background-color: #e2f0f9;
+  width: 1200px;
+  height: 508px;
+}
+
+.intro-text-block {
+  height: 215px;
+  background-color: #ffffff;
+}
+
 .sub-features-list,
 .features-list {
   list-style: none;
@@ -72,7 +108,37 @@ footer {
 h2{
   font-size: 21px;
   line-height: 26px;
-	
+}
+
+.features-block {
+  display: flex;
+  min-height: 256px;
+  margin: 0;
+}
+
+.feature-item-block {
+  color: #ffffff;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.sub-features-list {
+  display: flex;
+  min-height: 330px;
+  padding: 0;
+}
+
+.features-list {
+  display: flex;
+  min-height: 256px;
+  width: 1200px;
+  background-color: #eeeeee;
+  padding: 0;
+}
+
+li.feature-item {
+  width: 400px;
+  padding: 20px
 }
 
 .feature-item h3, 
@@ -83,7 +149,8 @@ h2{
 }
 
 .search-hotel  {
-   text-align: center;
+  text-align: center;
+  min-height: 290px;
 }
 
 .search-hotel b {
@@ -124,15 +191,30 @@ h2{
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer {
+  display: flex;
+  width: 1200px;
+  min-height: 120px;
+}
+
 .main-footer .visitsedona{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;	
+  text-align: center;	
+	
   color: #000000;
+  width: 400px;
 }
 
 .footer-social ul {
   list-style: none;
+  width: 400px;
+  display: flex;
+}
+
+.footer-copyright {
+  width: 400px;
 }
 
 .search-form label,
