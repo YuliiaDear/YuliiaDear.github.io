@@ -73,6 +73,8 @@ footer {
 }
 
 .welcome-block {
+  display: flex;
+  flex-direction: column;
   background-color: #e2f0f9;
   height: auto;
   width: 1200px;
@@ -80,10 +82,23 @@ footer {
 }
 
 .background-image {
-  background-image: url("img/top-background.jpg");
+  background-image: url("/img/top-background.jpg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: 0 -85px;
   background-color: #e2f0f9;
   width: 1200px;
   height: 508px;
+}
+
+.welcome-image {
+  background-image: url("/img/welcome_to_sedona.png");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  width: 460px;
+  height: 350px;
+  margin: auto;
+  margin-top: 75px;
 }
 
 .intro-text-block {
