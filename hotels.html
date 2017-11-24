@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona hotels</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -17,7 +17,7 @@
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="foto.html">Фото и видео</a></li>
-		  
+		  <li></li>
           <li><a href="map.html">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -27,7 +27,7 @@
       <section class="filter-hotel"> 
 		<h3 class="visually-hidden">Форма подбора гостинцы в Седоне</h3>
         <form class="filter-form"  method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="filter-check">
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -44,7 +44,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset  class="filter-check">
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
@@ -61,18 +61,20 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="costs-filter">
-            <legend>Стоимость в сутки(P):</legend>
-            <div> 
-              <input type="text" id="price-min" name="price-min" value="от 0">
+          <fieldset class="filter-range">
+            <legend class="filter-range-title">Стоимость в сутки (P):</legend>
+            <div class="price-controls"> 
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <div> 
-              <input type="text" id="price-max" name="price-max" value="до 3000">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <div> 
-              <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1">
-            </div>
-			<button type="submit" class="filter-button">Показать</button>
+			<button class="btn-transparent" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
