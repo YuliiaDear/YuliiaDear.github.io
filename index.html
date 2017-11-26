@@ -94,12 +94,37 @@
         </section>
         <section class="search-hotel">
           <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>  
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button>Поиск гостиницы в Седоне</button>
         </section>
-        <img src="img/map.jpg" width="1200" alt="Карта города Седона">
         
+        <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+          <div class="form-row">
+			<label>Дата заезда:
+              <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+            </label>
+            <span class="calendar"></span>
+		  </div>
+          <div class="form-row">
+			<label>Дата выезда:
+            <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+            </label>
+			<span class="calendar"></span>
+		  </div>
+          <div class="form-row amount">
+            <label for="adults-amt">Взрослые:</label>
+            <span class="min-plus">-</span>
+            <input type="text" name="adults-amt" id="adults-amt" value="2">
+            <span class="min-plus">+</span>
+            <label for="children-amt">Дети:</label>
+            <span class="min-plus">-</span>
+            <input type="text" name="children-amt" id="children-amt" value="0">
+            <span class="min-plus">+</span>
+          </div>
+		  <button class="button" type="submit" value="Найти">Найти</button>   
+        </form>
       </main>
+	  <img src="img/map.jpg" width="1200" alt="Карта города Седона">
       <footer class="main-footer">
         <a href="#" class="visitsedona">#VISITSEDONA</a>
         <div class="footer-social">
@@ -126,24 +151,5 @@
         </p>
       </footer>
     </div>
-    <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
-      <label>Дата заезда:
-      <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
-      </label>
-      <button class="calendar"></button>
-      <label>Дата выезда:
-      <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
-      </label>
-      <button class="calendar"></button>
-      <label for="adults-amt">Взрослые:</label>
-      <button class="button">-</button>
-      <input type="text" name="adults-amt" id="adults-amt" value="2">
-      <button class="button">+</button>
-      <label for="children-amt">Дети:</label>
-      <button class="button">-</button>
-      <input type="text" name="children-amt" id="children-amt" value="0">
-      <button class="button">+</button>
-      <button class="button" type="submit" value="Найти">Найти</button>   
-    </form>
   </body>
 </html>
