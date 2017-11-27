@@ -377,15 +377,25 @@ li.feature-item {
 }
 
 .search-form label {
+  display: block;
+  width: 110px;
   padding-left: 0;
+  padding-top: 6px;
+  margin-right: 5px;
+}
+
+.amount label:last-of-type  {
+  margin-left: 5px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .search-form input {
   width: 295px;
   height: 38px;
   padding-left: 10px;
-  margin-left: 25px;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-right: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -394,20 +404,7 @@ li.feature-item {
   background-color: #f2f2f2;
 }
 
-.form-row:nth-child(2) input{
-	margin-left: 20px;
-}
 
-.amount label:first-child {
-  margin-left: 0;
-	
-}
-
-.amount label {
-  margin-right: 42px;
-  margin-left: 40px;
-  padding-top: 5px;
-}
 
 .calendar {
   display: inline-block; 
@@ -495,12 +492,36 @@ footer {
 }
 
 .footer-social ul {
-  list-style: none;
-  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
   padding: 0;
+	
+  list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button img:active {
+  opacity: 0.5;
 }
 
 .footer-copyright {
@@ -513,6 +534,18 @@ footer {
 
 .logo_academy {
   margin-left: 8px;
+}
+
+.logo_academy:hover path,
+.logo_academy:focus path, 
+.logo_academy:hover rect,
+.logo_academy:focus rect {
+  fill: #81b3d2;
+}
+
+.logo_academy:active path,
+.logo_academy:active rect {
+  fill: #bdbbbc;
 }
 
 .visually-hidden {
@@ -788,13 +821,19 @@ fieldset .filter-range-title {
   margin: 0;
 }
 
-.results-list-hotels li{
+.results-list-hotels li {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   height: 150px;
   border-bottom: 1px solid #e5e5e5;
   align-items: center;
 }
+
+.raiting {
+	width: 50%;
+}
+	
 
 .hotel-photo {
   margin-left: 72px;
@@ -895,13 +934,24 @@ fieldset .filter-range-title {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.raiting {
+	
+}
+
 .rating p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+	
   text-align: center;
   color: #666666;
   vertical-align: middle;
   	
   background-color: #f2f2f2;
   width: 110px;
-  height: 27px;
+  height: 24px;
+  padding-top: 3px;
+  margin: 0;
 }
 
