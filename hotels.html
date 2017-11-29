@@ -31,15 +31,15 @@
             <legend>Инфраструктура:</legend>
             <ul class="checkbox-list">
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+                <input class="visually-hidden input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="Parking" id="filter-parking">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="Parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -48,15 +48,15 @@
             <legend>Тип жилья:</legend>
             <ul  class="checkbox-list">
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="Hotel" id="filter-hotel" checked>
+                <input class="visually-hidden input-checkbox" type="checkbox" name="Hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="Motel" id="filter-motel" checked>
+                <input class="visually-hidden input-checkbox" type="checkbox" name="Motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <input class="visually-hidden input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
@@ -81,20 +81,31 @@
       <section class="sort-panel">
 	    <h3 class="visually-hidden">Результаты поиска гостинцы в Седоне</h3>  
         <div class="found">
-          <b>Найдено:</b>
-          <span>3</span>
-        </div>
+		<ul>
+			<li>Найдено: <b>3</b></li>
+          
+        </ul>
+		 </div> 
         <div>
           <p>Сортировка:</p>
 		</div>
-		<div>
+		<div class="sort-navigation">
 		  <ul class="sort-panel-items">
 			<li><a href="#" class="sort-panel-current">По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По рейтингу</a></li>
-			<li><a href="#">min-max</a></li>
-			<li><a href="#">max-min</a></li>
 		  </ul>
+		  <ul class="sort-raiting"> 
+			<li><a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+<polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+</svg></a></li>
+			<li class="current"><a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+<polyline  fill="#231F20" points="5.5,10 0,0 11,0 "/>
+</svg>
+</a></li>
+			</ul>
         </div>
       </section>
       <section class="results-list">
@@ -115,8 +126,13 @@
 				</div>
 			  </div>
 			  <div class="rating">
-				  <span class="stars"></span>
-                  <p>Рейтинг: 8,5</p>
+				<ul  class="stars" >
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				<li><img src="img/rating-star.svg" alt="raiting-star"></li>
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				</ul>
+                <p>Рейтинг: 8,5</p>
               </div>
           </li>
           <li>
@@ -132,10 +148,14 @@
                   <div>
 					  <a href="#" class="button more-info">Подробнее</a>
                       <a href="#" class="button reserve">Забронировать</a>
-					  </div>
+					</div>
 			  </div>
               <div class="rating">
-				<span class="stars"></span>
+				<ul  class="stars" >
+				<li><img src="img/rating-star.svg" alt="raiting-star"></li>
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				</ul>
                 <p>Рейтинг: 8,9</p>
               </div>
           </li>
@@ -154,8 +174,11 @@
                   <a href="#" class="button reserve">Забронировать</a>
 				</div>
 		      </div>
-              <div class="rating">
-				<span class="stars"></span>
+                <div class="rating">
+				<ul  class="stars" >
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				<li><img src="img/rating-star.svg" alt="rating-star"></li>
+				</ul>
                 <p>Рейтинг: 9,2</p>
               </div>
           </li>
