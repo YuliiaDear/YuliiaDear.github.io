@@ -28,18 +28,22 @@ a {
 
 .main-header {
    min-height: 56px;
+   width: 1056px;
+   padding-left: 72px;
+   padding-right: 72px;
 }
 
 .main-navigation {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
   color: #000000;
-  position: relative;
-  
   background-color: #ffffff;
-  
+
+  padding: 0;
+  margin: 0;
+	
+  position: relative;
 }
 
 .main-header-logo {
@@ -51,11 +55,11 @@ a {
 
 .site-navigation {
   list-style: none;
-  width: 1200px;
+  width: 100%;
 	
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
  
   
   flex-wrap: wrap;
@@ -70,7 +74,17 @@ a {
   margin-right: 0;
   width: 240px;
   height: 41px;
-  text-align: center;
+  text-align: left;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-last-child(2) {
+  text-align: right;
+}
+
+.site-navigation li:nth-last-child(2) {
+  text-align: right;
+  margin-left: auto;
 }
 
 .site-navigation a {
@@ -138,13 +152,13 @@ main {
 
 .intro-text-block {
   position: relative;
-  min-height: 175px;
-  padding-top: 42px;
+  min-height: 173px;
+  padding-top: 43px;
   background-color: #ffffff;
 }
 
 .intro-text-block p {
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 .sub-features-list,
@@ -349,30 +363,31 @@ li.feature-item {
 
 .search-form {
   position: absolute;
-  width: 568px;
-  height: 395px;
-  background-color: #ffffff;
-  
-  margin-left: -284px;
+  width: 458px;
+  height: 285px;
+  padding: 55px;
 	
-	left: 50%;
-  
+  margin-left: -284px;
+  left: 50%;
   bottom: -395px;
-}
-
-.form-row:first-child {
-	padding-top: 55px;
+	
+  background-color: #ffffff;
 }
 
 .form-row {
+    position: relative;
 	display: flex;
 	flex-direction: row;
-	
+	justify-content: flex-end;
 	
 	padding-top: 29px;
-	width: 460px;
-	padding-left: 50px;
-	padding-right: 58px;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-row:first-child {
+  padding-top: 0;
 }
 	
 .search-form label,
@@ -386,24 +401,22 @@ li.feature-item {
 
 .search-form label {
   display: block;
-  width: 110px;
+  width: 112px;
   padding-left: 0;
-  padding-top: 6px;
-  margin-right: 5px;
+  padding-top: 7px;
+  margin-right: 0;
 }
 
 .amount label:last-of-type  {
-  margin-left: 5px;
-  margin-right: 0;
-  text-align: center;
+  width: 65px;
+	margin-left: auto;
 }
 
 .search-form input {
-  width: 295px;
+  width: 334px;
   height: 38px;
-  padding-left: 10px;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 12px;
+  margin: 0;
   padding-right: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -412,23 +425,52 @@ li.feature-item {
   background-color: #f2f2f2;
 }
 
-
-
-.calendar {
-  display: inline-block; 
-  background: 
-	 url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f2f2f2;
-  height: 38px;
-  width: 38px;
-	
-  margin: 0;
-  padding: 0;
+.search-form input:focus,
+.search-form input:hover {
+  background-color: #ebebeb;
 }
 
-.min-plus {
+.search-form input:active {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+.calendar {
+  position: absolute;
+  
+  height: 22px;
+  width: 21px;
+	
+  padding-right: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0;
+}
+
+.calendar:hover,
+.calendar:focus{
+  cursor: pointer;
+	
+}
+
+.calendar:active{
+  cursor: pointer;
+}
+
+.calendar:hover path,
+.calendar:focus path,
+.calendar:hover rect,
+.calendar:focus rect{
+  fill: #000000;
+	
+}
+
+.calendar:active path,
+.calendar:active rect {
+  fill: #81b3d2;
+}
+
+.min-plus-button {
   font: inherit;
   font-size: 25px;
   line-height: 38px;
@@ -436,15 +478,28 @@ li.feature-item {
   color: #a9a9a9;
   
   text-align: center;
- 
 	
   display: inline-block; 
   background-color: #f2f2f2;
   height: 38px;
   width: 38px;
 	
+  border: none;
   margin: 0;
   padding: 0;
+}
+
+.min-plus-button:hover,
+.min-plus-button:focus {
+  color: #000000;
+  cursor: pointer;
+
+}
+
+.min-plus-button:active {
+  color: #81b3d2;
+  cursor: pointer;
+
 }
 
 .amount input {
@@ -455,11 +510,10 @@ li.feature-item {
   text-align: center;
 }
 
-.search-form .button {
+.search-form .button-found {
   height: 58px;
   width: 458px;
   margin-top: 55px;
-  margin-left: 52px;
 	
   font: inherit;
   font-size: 21px;
@@ -475,18 +529,29 @@ li.feature-item {
   border: none;
 }
 
-footer {
-  background-color: rgba (255, 255, 255, 0,9);	
+.search-form .button-found:hover,
+.search-form .button-found:focus {
+  background-color: #669ec0;
+  cursor: pointer;
 }
 
+.search-form .button-found:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+
 .main-footer {
-  	
+	
   display: flex;
   width: 1200px;
   min-height: 120px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+	
+  background-color: rgba (255, 255, 255, 0,9);
 }
 
 .main-footer .visitsedona{
@@ -654,7 +719,7 @@ footer {
   height: 23px;
 }
 
-.input-checkbox:checked label::after {
+.input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   
@@ -731,6 +796,7 @@ fieldset .filter-range-title {
 
 .price-controls input {
   width: 50px;
+  height: 32px;
   margin: 0;
 
   color: inherit;
@@ -812,6 +878,7 @@ fieldset .filter-range-title {
 
 .sort-panel {
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 1056px;
   padding-left: 72px;
@@ -822,19 +889,27 @@ fieldset .filter-range-title {
 }
 
 .found {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 135px;
   margin-left: 0;
-  margin-right: 30px;
+  margin-right: 0;
   padding-top: 0;
 }
 
 .found ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 135px;
+  margin-right: 0;
   padding: 0 0;
   list-style: none;
 }
 
 .found li {
+  width: auto;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;	
@@ -854,7 +929,7 @@ fieldset .filter-range-title {
   line-height: 18px;
   font-weight: 400;	
   color: #000000;
-  
+  margin-left: 30px; 
   margin-right: 0;
 
 }
