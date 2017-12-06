@@ -70,7 +70,7 @@ a {
 }
 
 .site-navigation li {
-  padding-top: 14px;
+  padding-top: 10px;
   margin: 0;
   margin-right: 0;
   width: 240px;
@@ -85,6 +85,7 @@ a {
 
 .site-navigation li:nth-last-child(2) {
   text-align: right;
+  letter-spacing: 0.35px;
   margin-left: auto;
   
 }
@@ -117,6 +118,9 @@ main {
   height: auto;
   width: 1200px;
   height: auto;
+	
+     text-align: center;
+
 }
 
 .hero-image {
@@ -156,11 +160,21 @@ main {
   position: relative;
   min-height: 173px;
   padding-top: 43px;
+	
   background-color: #ffffff;
+}
+
+.intro-text-block h2 {
+  font-size: 21px;
+  line-height: 26px;	
 }
 
 .intro-text-block p {
   padding-top: 12px;
+  width: 500px;	
+  padding-left: 350px;
+  padding-right: 350px;
+  letter-spacing: 0.06px;
 }
 
 .sub-features-list,
@@ -200,15 +214,6 @@ main {
   padding-bottom: 40px;
   padding-right: 40px;
   padding-left: 40px;
-}
-
-.welcome-block  {
-   text-align: center;
-}
-
-h2{
-  font-size: 21px;
-  line-height: 26px;
 }
 
 .features-block {
@@ -295,6 +300,7 @@ li.feature-item {
 .feature-item-block h3 {
   font-size: 21px;
   line-height: 21px;
+
   padding-bottom: 5px;
 }
 
@@ -903,22 +909,20 @@ fieldset .filter-range-title {
 .sort-panel {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   width: 1056px;
   padding-left: 72px;
   padding-right: 72px;
 
-  min-height: 86px;
+  min-height: 71px;
+  padding-top: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 135px;
+  width: 180px;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 30px;
   padding-top: 0;
 }
 
@@ -940,22 +944,24 @@ fieldset .filter-range-title {
   color: #000000;
 }
 
+.sort-panel p{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;	
+  color: #000000;
+	
+  width: 75px;
+  margin-left: 0; 
+  margin-right: 0;
+
+}
+
 .sort-navigation {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   margin-left: 40px;
   padding: 0;
-}
-
-.sort-panel p{
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;	
-  color: #000000;
-  margin-left: 30px; 
-  margin-right: 0;
-
 }
 
 .sort-panel-items {
