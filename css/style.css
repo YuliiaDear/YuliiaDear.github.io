@@ -24,7 +24,7 @@ a {
   margin: 0 auto;
   background-color: #ffffff;
   padding: 0;
-  box-shadow: 0 5px 15px 5px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 5px rgba(0, 1, 1, 0.1);
 }
 
 .main-header {
@@ -385,6 +385,7 @@ li.feature-item {
   left: 600px;
 	
   background-color: #ffffff;
+    box-shadow: 0 5px 15px 5px rgba(0, 1, 1, 0.1);
 }
 
 .form-row {
@@ -418,6 +419,11 @@ li.feature-item {
   padding-left: 0;
   padding-top: 7px;
   margin-right: 0;
+}
+
+.arrival-label,
+.departure-label {
+	letter-spacing: 0.3px;
 }
 
 .amount label:last-of-type  {
@@ -556,7 +562,6 @@ li.feature-item {
   cursor: pointer;
 }
 
-
 .main-footer {
   position: absolute;
   bottom: 0;
@@ -565,14 +570,12 @@ li.feature-item {
 }
 
 .inner-footer {
-
   min-height: 110px;
   padding-top: 15px;
   background-color: #ffffff;
 }
 	
 .footer-items {	
-	
   width: 1200px;
   padding-bottom: 0;
   padding-top: 20px;
@@ -584,7 +587,6 @@ li.feature-item {
 }
 
 .visitsedona{
-  
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;	
@@ -635,6 +637,10 @@ li.feature-item {
   align-items: center;
 }
 
+.footer-copyright b {
+  font-weight: 400;
+}
+
 .logo_academy {
   margin-top: 4px;
   margin-left: 8px;
@@ -655,7 +661,7 @@ li.feature-item {
 .visually-hidden {
   display: none;
 }
-  
+
 
 /* hotels.html */
 
@@ -1081,6 +1087,7 @@ fieldset .filter-range-title {
 .about-hotel h3 {
   margin-top: 0;
   margin-bottom: 6px;
+  letter-spacing: 0.2px;
 }
 
 .results-list-hotels b {
