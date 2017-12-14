@@ -1,3 +1,5 @@
+"use strict";
+
 var button = document.querySelector(".button-search");
 var form = document.querySelector(".search-form");
 		  
