@@ -420,7 +420,6 @@ li.feature-item {
   background-color: #ffffff;
   -webkit-box-shadow: 0 5px 15px 5px rgba(0, 1, 1, 0.1);
           box-shadow: 0 5px 15px 5px rgba(0, 1, 1, 0.1);
-
 }
 
 .form-row {
@@ -550,7 +549,6 @@ li.feature-item {
 .min-plus-button:focus {
   color: #000000;
   cursor: pointer;
-
 }
 
 .min-plus-button:active {
@@ -600,13 +598,17 @@ li.feature-item {
 .map {
   display: block;
   width: 1200px;
-  height: 593px; 
+  height: 593px;
 	
   background-image: url("../img/map.jpg");
   background-size: 1200px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f2f1ef;
+}
+
+.map iframe {
+  border: none;
 }
 
 .footer {	
